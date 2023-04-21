@@ -9,7 +9,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 RUN apt-get -y clean
 RUN apt-get -y autoremove
 
-Expose 80
+Expose 5000
 
 COPY . .
 
