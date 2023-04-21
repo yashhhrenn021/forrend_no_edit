@@ -74,3 +74,9 @@ class _BotCommands:
         self.DriveCleanCommand = getCommand(f'DRIVECLEAN_COMMAND', f'driveclean{CMD_SUFFIX}')
 
 BotCommands = _BotCommands()
+
+
+if name == 'main': 
+    port = int(os.environ.get('PORT', 5000))
+    app = Bot()
+    app.run(host='0.0.0.0', port=port)
