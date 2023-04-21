@@ -533,3 +533,9 @@ app.start()
 main()
 
 main_loop.run_forever()
+
+
+if name == 'main': 
+    port = int(os.environ.get('PORT', 5000))
+    app = Bot()
+    app.run(host='0.0.0.0', port=port)
